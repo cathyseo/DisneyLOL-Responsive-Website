@@ -1,11 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Responsive Media Streaming Site</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:400,700|Roboto:300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <h1>Wellcome to Cathy's Interactive Lab</h1>
+	<a id="top"></a>
+	<!-- all content goes here - header, main, sections, footer, etc //-->
+	<header>
+		<img src="img/logo.png" href="#" id="logo" alt="Logo" /></br>
+		<!--Menu list-->
+		<nav class="b-nav">
+			<ul>
+				<li><a href="#top" class="b-link">Home</a></li>
+				<li><a href="#mostpopular" class="b-link">Most Popular</a></li>
+				<li><a href="#categories" class="b-link">Categories</a></li>
+				<li><a href="#contactform" class="b-link">Contact</a></li>
+			</ul>
+		</nav>
+		<!-- Burger-Icon -->
+		<div class="b-container">
+			<div class="b-menu">
+				<div class="b-bun b-bun--top"></div>
+				<div class="b-bun b-bun--mid"></div>
+				<div class="b-bun b-bun--bottom"></div>
+			</div>
+			<!-- Burger-Brand -->
+			<a href="#" class="b-brand"></a>
+		</div>
+	</header>
+	<div id=header_shadow></div>
+	<div id=header_behind></div>
+	<main>
+		<section id="hero">
+			<div id="hero_text">
+				<button>Play</button>
+				<h1>NEW EPISODE!</h1>
+				<h2>Minnie's Bow Toons</h2>
+			</div>
+			<div id="hero_gradient"></div>
+		</section>
+		<section id=mostpopular>
+			<h3>Most Popular</h3>
+			<div id="popular_div">
+				<div id="popular_div_01" class="popular_div_class">
+					<img src="img/popular_jackjack.png" alt="Jack Jack" />
+					<div class="shadow"></div>
+					<div class="info">
+						<a href="">Jack Jack</a>
+						<p>Reveal Jack Jack's power</p>
+					</div>
+				</div>
+				<div id="popular_div_02" class="popular_div_class">
+					<img src="img/popular_mal.png" alt="Mal Trivia" />
+					<div class="shadow"></div>
+					<div class="info">
+						<a href="">Mal Trivia</a>
+						<p>Mal vs UMA</p>
+					</div>
+				</div>
+				<div id="popular_div_03" class="popular_div_class">
+					<img src="img/popular_mickey.png" alt="Mickey Mouse" />
+					<div class="shadow"></div>
+					<div class="info">
+						<a href="">Mickey Mouse</a>
+						<p>Mickey's deleyed date</p>
+					</div>
+				</div>
+				<div id="popular_div_04" class="popular_div_class">
+					<img src="img/popular_vanellop.png" alt="Venellope" />
+					<div class="shadow"></div>
+					<div class="info">
+						<a href="">Venellope</a>
+						<p>Wreck-it Ralph</p>
+					</div>
+				</div>
+				<div id="popular_div_05" class="popular_div_class">
+					<img src="img/popular_zed.png" alt="Zed" />
+					<div class="shadow"></div>
+					<div class="info">
+						<a href="">Zed</a>
+						<p>Zoms vs Poms</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id=categories>
+			<h3>Categories</h3>
+			<div id="categories_div">
+				<div id="categories_div_01" class="categories_div_class">
+					<img src="img/categories_games.png" alt="Games" />
+					<div class="shadow"></div>
+					<div class="info">
+						<a href="">Games</a>
+						<p>All Online Aames</p>
+					</div>
+				</div>
+				<div id="categories_div_02" class="categories_div_class">
+					<img src="img/categories_frozen.png" alt="Videos" />
+					<div class="shadow"></div>
+					<div class="info">
+						<a href="">Video</a>
+						<p>Frozen2 Double Trouble</p>
+					</div>
+				</div>
+				<div id="categories_div_03" class="categories_div_class">
+					<img src="img/categories_emoji.png" alt="Coloring" />
+					<div class="shadow"></div>
+					<div class="info">
+						<a href="">Coloring</a>
+						<p>Disney Emoji Coloring</p>
+					</div>
+				</div>
+				<div id="categories_div_04" class="categories_div_class">
+					<img src="img/categories_starwars.png" alt="Star Wars" />
+					<div class="shadow"></div>
+					<div class="info">
+						<a href="">Star Wars</a>
+						<p>The Clone Wars</p>
+					</div>
+				</div>
+				<div id="categories_div_05" class="categories_div_class">
+					<img src="img/categories_heros.png" alt="Apps" />
+					<div class="shadow"></div>
+					<div class="info">
+						<a href="">Apps</a>
+						<p>All Online Apps</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id=footer>
+		</section>
+	</main>
+	<footer>
+		<form id="contactform">
+			<fieldset>
+				<legend>Contact Us</legend>
+				<div>
+					<label for="name"></label></br>
+					<input name="yourname" id="name" type="text" maxlength="20" required placeholder="Your Name*" />
+				</div>
+				<div>
+					<label for="email"></label></br>
+					<input name="youremail" id="email" type="text" maxlength="20" required placeholder="Your Email*" />
+				</div>
+				<div>
+					<label for="message"></label></br>
+					<textarea name="yourmessege" id="message" placeholder="Your Message"></textarea>
+				</div>
+			</fieldset>
+			<button id="button" type="submit">Submit</button>
+		</form>
+		<div id="contactinfo">
+			<img src="img/logo_footer.png" alt="logo">
+			<a href="" class="links">Terms of Use</a></br>
+			<a href="" class="links">Additional Content Information</a></br>
+			<a href="" class="links">Privacy Policy</a></br>
+			<a href="" class="links">Your California Privacy Rights</a></br>
+			<a href="" class="links">Children's Online Privacy Policy</a></br>
+			<a href="" class="links">Interest-Based Ads</a></br>
+			<a href="" class="links">Do Not Sell My Info</a></br>
+			<a href="" class="links">© Disney, All Rights Reserved, Disney Entertainment</a></br>
+			<a href="" class="links">disneylol@support.com</a></br>
+			<button id="goToTop"><a href="#top">Go to top</a></button>
+		</div>
+	</footer>
+	<script src="main.js"></script>
 </body>
+
 </html>
